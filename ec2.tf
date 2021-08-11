@@ -7,7 +7,7 @@ resource "aws_s3_bucket" "splunk_server_storage"{
     bucket = "splunk_server_storage_purush"
     acl    = "private"
 
-    tags{
+    tags = {
       name = "Splunk Binaries"
       Environment = "Dev"
     }
